@@ -1,149 +1,111 @@
 INSERT INTO Genre(name)
-VALUES ('Punk rock');
-
-INSERT INTO Genre(name)
-VALUES ('Reggae');
-
-INSERT INTO Genre(name)
-VALUES ('Drum&bass');
-
-INSERT INTO Genre(name)
-VALUES ('Oldschool hip-hop');
-
-INSERT INTO Genre(name)
-VALUES ('Trash metall');
-
-INSERT INTO Genre(name)
-VALUES ('Trance');
-
-INSERT INTO Genre(name)
-VALUES ('Deep house');
-
-INSERT INTO Artist(name)
-VALUES('Alice Cooper');
-
-INSERT INTO Artist(name)
-VALUES('Public enemy');
-
-INSERT INTO Artist(name)
-VALUES('Ramones');
-
-INSERT INTO Artist(name)
-VALUES('Max Romeo');
-
-INSERT INTO Artist(name)
-VALUES('Markus Shultz');
-
-INSERT INTO Artist(name)
-VALUES('The Exploited');
-
-INSERT INTO Artist(name)
-VALUES('Noisia');
-
-INSERT INTO Artist(name)
-VALUES('Onyx');
-
-INSERT INTO Artist(name)
-VALUES('Metallica');
-
-INSERT INTO Artist(name)
-VALUES('Pendulum');
-
-INSERT INTO Artist(name)
-VALUES('The Wailers');
+VALUES 
+	('Punk rock'),
+	('Reggae'),
+	('Drum&bass'),
+	('Oldschool hip-hop'),
+	('Trash metall'),
+	('Trance'),
+	('Deep house'),
+	('Alice Cooper'),
+	('Public enemy'),
+	('Ramones'),
+	('Max Romeo'),
+	('Markus Shultz'),
+	('The Exploited'),
+	('Noisia'),
+	('Onyx'),
+	('Metallica'),
+	('Pendulum'),
+	('The Wailers');
 
 INSERT INTO Album(name, year)
-VALUES('Trash', 1989);
-
-INSERT INTO Album(name, year)
-VALUES('Fear of a Black Planet', 1990);
-
-INSERT INTO Album(name, year)
-VALUES('Bacdafucup', 1993);
-
-INSERT INTO Album(name, year)
-VALUES('Immersion', 2010);
-
-INSERT INTO Album(name, year)
-VALUES('Acid Eaters', 1993);
-
-INSERT INTO Album(name, year)
-VALUES('Master of Puppets', 1986);
-
-INSERT INTO Album(name, year)
-VALUES('Scream', 2012);
-
-INSERT INTO Album(name, year)
-VALUES('Brain Drain', 1989);
-
-INSERT INTO Album(name, year)
-VALUES('Majestic Warrioirs', 1991);
+VALUES
+	('Trash', 1989),
+	('Fear of a Black Planet', 1990),
+	('Bacdafucup', 1993),
+	('Immersion', 2010),
+	('Acid Eaters', 1993),
+	('Master of Puppets', 1986),
+	('Scream', 2012),
+	('Brain Drain', 1989),
+	('Majestic Warrioirs', 1991);
 
 INSERT INTO Track(name, duration, album_id)
-VALUES('House of Fire', 227, 1);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('Why Trust You', 193, 1);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('Bed of Nails', 220, 1);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('Soebody to Love', 152, 5);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('Surf City', 147, 5);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('I Believe in Miracles', 220, 8);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('Power to the People', 190, 2);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('Fight the Power', 181, 2);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('Bust Dat Ass', 48, 3);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('Is This Love', 199, 9);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('One Love', 150, 9);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('No Woman No Cry', 125, 9);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('Tarantula', 185, 4);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('The Sun', 197, 7);
-
-INSERT INTO Track(name, duration, album_id)
-VALUES('Nothing Else Matters', 245, 6);
+VALUES
+	('House of Fire', 227, 1),
+	('Why Trust You', 193, 1),
+	('Bed of Nails', 220, 1),
+	('Soebody to Love', 152, 5),
+	('Surf City', 147, 5),
+	('I Believe in Miracles', 220, 8),
+	('Power to the People', 190, 2),
+	('Fight the Power', 181, 2),
+	('Bust Dat Ass', 48, 3),
+	('Is This Love', 199, 9),
+	('One Love', 150, 9),
+	('No Woman No Cry', 125, 9),
+	('Tarantula', 185, 4),
+	('The Sun', 197, 7),
+	('Nothing Else Matters', 245, 6);
 
 INSERT INTO Compillation(name, year)
-VALUES('Best of Alice Cooper', 2001)
+VALUES
+	('Best of Alice Cooper', 2001),
+	('Best of Onyx', 2005),
+	('Best of the Wailers', 1995),
+	('Best of Pendulum', 2015),
+	('Best of Public Enemy', 2005),
+	('Best of Ramones', 1992),
+	('Best of Noisia', 2020),
+	('Best of Oldschool Hip-Hop', 2001);
 
-INSERT INTO Compillation(name, year)
-VALUES('Best of Onyx', 2005)
+INSERT INTO genre_artist (genre_id, artist_id)
+VALUES
+	(1,1),
+	(1,3),
+	(1,6),
+	(2,4),
+	(2,11),
+	(3,7),
+	(3,10),
+	(4,2),
+	(4,8),
+	(5,1),
+	(5,9),
+	(6,5),
+	(7,5);
 
-INSERT INTO Compillation(name, year)
-VALUES('Best of the Wailers', 1995)
+INSERT INTO artist_album (artist_id, album_id)
+VALUES 
+	(1,1),
+	(2,2),
+	(2,3),
+	(3,5),
+	(3,8),
+	(5,7),
+	(8,3),
+	(9,6),
+	(10,4),
+	(4,9),
+	(11,9);
 
-INSERT INTO Compillation(name, year)
-VALUES('Best of Pendulum', 2015)
+INSERT INTO artist_album (artist_id)
+VALUES 
+	(6),
+	(7);
 
-INSERT INTO Compillation(name, year)
-VALUES('Best of Public Enemy', 2005)
-
-INSERT INTO Compillation(name, year)
-VALUES('Best of Ramones', 1992)
-
-INSERT INTO Compillation(name, year)
-VALUES('Best of Noisia', 2020)
-
-INSERT INTO Compillation(name, year)
-VALUES('Best of Oldschool Hip-Hop', 2001)
+INSERT INTO compillation_track (compillation_id, track_id)
+VALUES
+    (1,1),
+    (1,3),
+    (2,7),
+    (2,8),
+    (3,11),
+    (4,13),
+    (5,9),
+    (3,12),
+    (6,4),
+    (6,5),
+    (8,7),
+    (8,9);
