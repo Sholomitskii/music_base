@@ -6,7 +6,10 @@ VALUES
 	('Oldschool hip-hop'),
 	('Trash metall'),
 	('Trance'),
-	('Deep house'),
+	('Deep house');
+
+INSERT INTO Artist(name)
+VALUES 
 	('Alice Cooper'),
 	('Public enemy'),
 	('Ramones'),
@@ -24,7 +27,7 @@ VALUES
 	('Trash', 1989),
 	('Fear of a Black Planet', 1990),
 	('Bacdafucup', 1993),
-	('Immersion', 2010),
+	('Immersion', 2020),
 	('Acid Eaters', 1993),
 	('Master of Puppets', 1986),
 	('Scream', 2012),
@@ -68,7 +71,7 @@ VALUES
 	(2,4),
 	(2,11),
 	(3,7),
-	(3,10),
+    (3,10),
 	(4,2),
 	(4,8),
 	(5,1),
@@ -109,3 +112,4 @@ VALUES
     (6,5),
     (8,7),
     (8,9);
+ 
